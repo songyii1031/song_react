@@ -1,0 +1,14 @@
+.wrapper {
+    border-radius: 30px;
+}
+.mypage.wrapper {
+    background-color: #faf1f6; 
+}
+
+.dashboard.wrapper {
+    background-color: #f1faf5; 
+}
+
+.home.wrapper {
+    background-color: #f1f1fa; 
+}

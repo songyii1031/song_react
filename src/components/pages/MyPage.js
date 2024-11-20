@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import Info from '../hooks/Info';
-import ContextSample from '../hooks/ContextSample';
+import Info from '../../hooks/Info';
+import ContextSample from '../../hooks/ContextSample';
+import '../../styles/pages.css';
 
 function MyPage() {
   const [visible, setVisible] = useState(false);
 
   return (
-    <div>
+    <div className='mypage wrapper'>
       <button
         onClick={() => {
           setVisible(!visible);

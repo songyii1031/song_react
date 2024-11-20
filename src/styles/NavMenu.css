@@ -4,46 +4,132 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
-    background-color: #F8F9FA; 
+    height: 60px; 
     z-index: 1000; 
   }
 
+  .navbar-toggler:focus, .navbar-toggler:hover {
+    outline: none;
+  }
 
+ 
+/* 
+  .navbar-brand {
+    position: absolute;
+    top: 7px;
+  } */
+
+  * {
+    list-style: none;
+  }
 
   /* 작은 모바일 화면 (320px 이하) */
   @media (max-width: 320px) {
   
   }
   
-  /* 모바일 화면 (480px 이하) */
-  @media (max-width: 480px) {
-    
-  }
-  
-  /* 일반적인 모바일 화면 (480px ~ 767px) */
-  @media (min-width: 481px) and (max-width: 767px) {
-  
-  }
-  
-  /* 태블릿 화면 (768px ~ 1024px) */
-  @media (min-width: 768px) and (max-width: 1024px) {
- 
-  }
-  
-  /* 작은 데스크탑 화면 (1280px ~ 1440px) */
-  @media (min-width: 1280px) {
-    
-    nav {
-      width: 1300px;
-      margin: 0 auto;
+  /* */
+  @media (max-width: 991px) {
+    .arrow_nav {
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-image: url('../assets/img/add.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: all 0.2s; 
     }
 
+    .arrow_nav:hover {
+      transform: rotate(135deg);
+    }
+  
+    .navbar-nav {
+      padding-top: 30px;
+    }
+
+    .nav-link {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1.5rem 0;
+    }
+
+
+    .navbar-nav .nav-item .sub_menu.show {
+      height: auto;
+      opacity: 1;
+      height: 60px;
+      visibility: visible;
+    }
+  
+    /* 기본적으로 서브 메뉴는 숨겨짐 */
+    .navbar-nav .nav-item .sub_menu {
+      height: 0;
+      opacity: 0; 
+      visibility: hidden;
+      transition: all 0.2s; /* opacity와 height에 트랜지션 추가 */
+    }
+
+    
+
+  }
+   
+  /* 데스크탑 화면 (992px ~ 1440px) */
+  @media (min-width: 992px) {
+    
+    nav {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      --after-height: 0;
+    }
+    nav::after {
+      position: absolute;
+      top:0;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: var(--after-height); /* CSS 변수로 높이를 지정 */
+      background-color: inherit;
+      transition: height 0.3s ease; /* 부드러운 트랜지션 효과 추가 */
+      z-index: -1; 
+    }
+ 
+    .container-fluid {
+      width: 1300px;
+    } 
        
     li.nav-item {
-      width: 100px;
+      width: 130px;
       text-align: center;
     } 
+
+    .sub_menu {  
+      position: absolute; 
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      opacity: 0;
+      width: 130px;
+      text-align: center;
+      height: 0;
+      overflow: hidden;
+      transition: opacity 0.5s ease, height 0.5s ease; /* opacity와 height에 트랜지션 추가 */
+    }
+    
+    .sub_menu.show {
+      opacity: 1;
+      height: auto; /* 마우스를 올리면 `height`가 자동으로 늘어나도록 설정 */
+    }
+
+    .arrow_nav {
+      display: none;
+    }
+    
+ 
   }
   
   /* 큰 데스크탑 화면 (1600px 이상) */
