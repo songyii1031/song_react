@@ -13,8 +13,7 @@ body {
 .invitation-container {
     width: 100%;
     max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 0 auto; 
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -24,6 +23,7 @@ body {
     text-align: center;
     padding-bottom: 20px;
     border-bottom: 2px solid #f0f0f0;
+    padding: 20px;
 }
 
 .invitation-header h1 {
@@ -52,12 +52,7 @@ body {
     font-size: 1rem;
     color: #666;
 }
-
-.bride-groom {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
+ 
 
 .bride,
 .groom {
@@ -67,7 +62,7 @@ body {
 
 .bride h3,
 .groom h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #a7a7a7;
     margin-bottom: 10px;
 }
@@ -104,3 +99,119 @@ body {
     margin-top: 20px;
 }
   
+
+/* 시작 */
+.center {
+    text-align: center;
+}
+
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    border-top: 1px solid #f0f0f0 ; 
+    opacity: 1;
+    margin: 0;
+}
+.main_img {
+    width: 100%;
+    height: 700px;
+    background-image: url('../assets/img/main_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bride-groom {
+    padding: 80px 0 140px ;
+}
+.bride-groom-secion {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    width: 40%;
+    margin: 30px auto;
+}
+
+.info p {
+    margin: 0;
+}
+
+/* 초대문구 스타일 */
+
+.invitation_wrap { 
+    height: 230px;
+    background-color: #eee; 
+
+ }
+
+ /* 서약문구 */
+ .wedding_vows_wrap { 
+    height: 400px; 
+    text-align: center;
+ } 
+
+ .main_img_2 {
+    width: 100%;
+    height: 600px;
+    background-color: #888;
+    /* background-image: url('../assets/img/main_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+} 
+
+
+.contact {
+    padding: 100px 0;
+}
+
+.contact button {
+    border: 1px solid #eaeaea;
+    padding: 20px 100px;
+    margin-top: 30px;
+ }
+
+
+ .gallery_wrap {
+    margin-top: 50px;
+ }
+
+
+ .images_wrap {
+    position: relative;
+    padding: 20px;
+    height: 560px;
+ }
+
+ 
+ .imgBox {
+    position: absolute;
+    background-color: #eaeaea;
+    width: 45%;
+    height: 270px;
+    margin-top: 30px;
+ }
+
+ .imgBox:nth-child(1) {
+    top: 0;
+    left: 20px;
+    background-color: #eaeaeada;
+ }
+ .imgBox:nth-child(2) {
+    top: -20px;
+    right: 20px;
+    background-color: #cacacada;
+ } 
+ .imgBox:nth-child(3) {
+    bottom: 0;
+    left: 20px;
+    background-color: #d4d4d4da;
+ }
+ .imgBox:nth-child(4) {
+    bottom: 20px;
+    right: 20px;
+}

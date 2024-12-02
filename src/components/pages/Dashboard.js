@@ -1,17 +1,15 @@
 import React from 'react';
 import Average from '../../hooks/Average';
 import '../../styles/pages.css';
+
+
+
+let map = new Map();
+  map.set( 'banana', 1 );
+  map.set( 'orange', 2 );
+  map.set( 'meat', 4 );
  
-let john = { name: "John" };
-
-// 고객의 가게 방문 횟수를 세본다고 가정해 봅시다.
-let visitsCountMap = new Map();
-
-// john을 맵의 키로 사용하겠습니다.
-visitsCountMap.set(john, 123);
-
-console.log( visitsCountMap.get(john) ); // 123
-
+  
 
 function Dashboard() {
   return (
