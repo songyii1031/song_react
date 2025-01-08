@@ -10,7 +10,8 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^3.0.1",
-    "web-vitals": "^4.2.4"
+    "web-vitals": "^4.2.4",
+    "homepage": "http://codingapple.com/blog"
   },
   "scripts": {
     "start": "cross-env PORT=3001 react-scripts start",
