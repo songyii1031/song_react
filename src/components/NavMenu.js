@@ -53,7 +53,7 @@ function NavMenu() {
 
   return (
     <header className='header'>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <Link to="/Home" className="navbar-brand">
             Home page

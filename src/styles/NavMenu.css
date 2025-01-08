@@ -8,8 +8,18 @@
     z-index: 1000; 
   }
 
-  .navbar-toggler:focus, .navbar-toggler:hover {
+  .navbar-toggler:focus, .navbar-toggler:hover,
+  .navbar-toggler {
     outline: none;
+  }
+
+  .navbar-toggler:focus, .navbar-toggler:hover {
+    box-shadow: 0px 0px 5px #3a93c050;
+
+  }
+
+  .navbar {
+    background-color: #fff;
   }
 
  

@@ -1,7 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../../styles/MyPage.css';
+import Modal from './modal/Modal';
 
 function MyPage() {
+
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(true);  // 모달 열기
+  };
+
+  const closeModal = () => {
+    setShowModal(false);  // 모달 닫기
+  };
    
   return (
     <div className="invitation-container">
@@ -60,9 +71,10 @@ function MyPage() {
 
       <section className="contact">
         <div className="contact_wrap wrap">
-          <p>ooo & ooo의 장남 OOO</p>
-          <p>ooo & ooo의 장녀 OOO</p>
-          <button>연락하기</button>
+          <p>ooo & ooo의 jangnam OOO</p>
+          <p>ooo & ooo의 jangnyu OOO</p>
+          <button id='contact_pop_1' className='contact_pop' onClick={openModal}>연락하기 ???</button>
+          <Modal show={showModal} onClose={closeModal}></Modal>
         </div>  
       </section>
       <hr/>
