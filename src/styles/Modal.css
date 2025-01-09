@@ -1,0 +1,12 @@
+
+.modalTxtBox {
+    display: block;
+
+}
+
+.closeBtn {
+    transition: 0.6s;
+}
+.closeBtn:hover {
+    background-color: #eaeaeada;
+}

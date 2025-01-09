@@ -1,20 +1,21 @@
 import React from 'react';
- 
- 
+import '../../../styles/Modal.css';
+
+
 function Modal({ show, onClose }) {
     if (!show) return null;
 
     return (
         <div style={modalStyle}>
-             <div style={backShadow} onClick={onClose}></div>
-            <div style={modalContentStyle}> 
+            <div style={backShadow} onClick={onClose}></div>
+            <div style={modalContentStyle}>
                 <h2>모달 제목</h2>
                 <p>모달 내용이 들어가는 자리입니다.</p>
-                <button onclick="window.location='tel:+821092822169'">전화 걸기</button>
-                <button onclick="window.location='sms:+821092822169'">문자 보내기</button>
-                <button onClick={onClose}>닫기</button>
-            </div> 
-           
+                <a className='modalTxtBox' href="sms:+821068200126">문자보내기</a>
+                <a className='modalTxtBox' href="tel:+821068200126">전화하기</a>
+                <button className='closeBtn' onClick={onClose}>닫기</button>
+            </div>
+
         </div>
     )
 }
@@ -25,7 +26,7 @@ const modalStyle = {
     top: 0,
     left: 0,
     width: '100%',
-    height: '100%', 
+    height: '100%',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -41,11 +42,11 @@ const modalContentStyle = {
 };
 
 const backShadow = {
-    position: 'absolute', 
+    position: 'absolute',
     top: 0,
     left: 0,
     width: '100%',
-    height: '100%', 
+    height: '100%',
     backgroundColor: 'rgba(0,0,0,0.5)',
 }
 

@@ -10,6 +10,9 @@ body {
     background-color: #f9f9f9;
 }
 
+.center {
+    text-align: center;
+}
 .invitation-container {
     width: 100%;
     max-width: 500px;
@@ -121,7 +124,7 @@ hr {
 .main_img {
     width: 100%;
     height: 700px;
-    background-image: url('../assets/img/main_img.jpg');
+    /* background-image: url('../assets/img/main_img.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -214,4 +217,22 @@ hr {
  .imgBox:nth-child(4) {
     bottom: 20px;
     right: 20px;
+}
+
+
+
+/* TImer box */
+
+.dDayTimer {
+    margin: 100px 0;
+}
+.dd_title {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.countdown-box .time > span {
+    border: 1px solid #aaa;
+    background-color: #e8e8e8;
+    padding: 15px 10px;
 }

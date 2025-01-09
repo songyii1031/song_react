@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import MyPage from './components/pages/MyPage';
 import Home from './components/pages/Home';
 import Dashboard from './components/pages/Dashboard';
-import Modal from './components/pages/modal/Modal';
+
 // import Popup from './components/pages/Popup';
 import './App.css';
  

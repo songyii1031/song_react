@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import '../../styles/MyPage.css';
 import Modal from './modal/Modal';
+import DayTimer from '../../hooks/DayTimer';
 
 function MyPage() {
 
@@ -13,7 +14,11 @@ function MyPage() {
   const closeModal = () => {
     setShowModal(false);  // 모달 닫기
   };
-   
+
+  // 타이머
+  const targetDate = '2025-01-15T00:00:00';
+
+
   return (
     <div className="invitation-container">
   
@@ -85,11 +90,20 @@ function MyPage() {
         </div>
 
         <div className='images_wrap'> 
-          <div className='imgBox img1'><img src="" /></div>
-          <div className='imgBox img2'><img src="" /></div>
-          <div className='imgBox img3'><img src="" /></div>
-          <div className='imgBox img4'><img src="" /></div>
+          <div className='imgBox img1'><img src="" alt=""/></div>
+          <div className='imgBox img2'><img src="" alt=""/></div>
+          <div className='imgBox img3'><img src="" alt=""/></div>
+          <div className='imgBox img4'><img src="" alt=""/></div>
         </div>
+      </section>
+
+      <hr/>
+      <section className='dDayTimer center'>
+        <p className='dd_title'>D-day Timer</p>
+        <div className='countDwn'>
+        <DayTimer date={targetDate} />
+        </div>
+          
       </section>
 
  
